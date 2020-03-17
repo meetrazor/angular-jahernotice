@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { LayoutModule } from 'angular-admin-lte';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { adminLteConf } from './admin-lte.conf';
+import { CoreModule } from 'src/core/core.module';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule, CoreModule, FormsModule,
+    AppRoutingModule, LayoutModule.forRoot(adminLteConf),
   ],
   providers: [],
   bootstrap: [AppComponent]
