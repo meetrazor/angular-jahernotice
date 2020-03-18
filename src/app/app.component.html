@@ -3,7 +3,7 @@
 </ng-container>
 <ng-template #noCustomLayout>
 	<mk-layout-wrapper>
-		<mk-layout-header logoLink="/login">
+		<mk-layout-header logoLink="/upload-excel">
 			<mk-layout-header-logo><b><img src="/assets/Jahernotice_logo.png" alt="Logo Image"></b></mk-layout-header-logo>
 			<mk-layout-header-logo-mini>
 				<div class="min-icon">
@@ -16,11 +16,6 @@
 			<app-sidebar-left-inner></app-sidebar-left-inner>
 		</mk-layout-sidebar-left>
 		<mk-layout-content>
-			<div mk-layout-content-before-header>
-				<!-- <div *mkLoadingPage="{checkPendingHttp: true, checkPendingRoute: true}">
-					 <mk-material-bar></mk-material-bar>
-				 </div> -->
-			</div>
 			<router-outlet></router-outlet>
 		</mk-layout-content>
 	</mk-layout-wrapper>

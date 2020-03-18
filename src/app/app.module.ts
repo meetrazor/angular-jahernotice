@@ -7,12 +7,14 @@ import { adminLteConf } from './admin-lte.conf';
 import { CoreModule } from 'src/core/core.module';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule, CoreModule, FormsModule,
